@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Flow 4: Sweetbot</title>
+<link href="../stylesheets/style-layout.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+		<script>
+	function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+	const items = document.querySelectorAll('img');
+const itemCount = items.length;
+const nextItem = document.querySelector('.next');
+const previousItem = document.querySelector('.previous');
+let count = 0;
+
+function showNextItem() {
+  items[count].classList.remove('active');
+
+  if(count < itemCount - 1) {
+    count++;
+  } else {
+    count = 0;
+  }
+
+  items[count].classList.add('active');
+  console.log(count);
+}
+
+function showPreviousItem() {
+  items[count].classList.remove('active');
+
+  if(count > 0) {
+    count--;
+  } else {
+    count = itemCount - 1;
+  }
+
+  items[count].classList.add('active');
+  console.log(count);
+}
+
+nextItem.addEventListener('click', showNextItem);
+previousItem.addEventListener('click', showPreviousItem);
+	</script>
+	
+
+<!--Mobilenavbar-->
+	<div class="grid">
+	
+		<div class="topNav">
+			 <div class="mobile-col-9-12">
+  <div id="myLinks">
+  <li><a  href="../index.html">Forside</a></li>
+  <li><a href="om mig.html">Om mig</a></li>
+  <li><a href="projekter.html">Projekter</a></li>
+  <li><a href="reflektion.html">Reflektioner</a></li>
+  </div>
+  <div class="burger">
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+				 </div>
+</div>
+		</div>
+		</div>
+		<div class="grid">
+	<div class="logo">
+	<div class="col-3-12"> 
+		<img src="../img/logo.png" alt="logo" class="logo">
+	</div>
+	</div>
+		<div class="col-9-12">
+			 <ul class="navDesk">
+  <li><a  href="../index.html">Forside</a></li>
+				 <li><a href="om mig.html">Om Mig</a></li>
+  <li><a class="active" href="projekter.html">Projekter</a></li>
+  <li><a href="reflektion.html">Reflektion</a></li>
+	</ul>
+			 </div>
+			 </div>
+	<div class="grid grid-pad">
+		<div class="col-1-1 push-1-12">
+		<h1>Flow 4 - Byg Sweetbot responsive website</h1>
+		</div>
+	<div class="col-2-3">
+     <div class="flowSweet">
+		<h3>Opgavebeskrivelse</h3>
+		 <p>Det lille fiktive webbureau Sweetbot har brug for jeres hjælp. Virksomheden har specialiseret sig indenfor følgende  områder:<br>
+<li>Webudvikling</li>
+<li>Digital security</li>
+<li>Branding</li>
+			 <br>
+Sweetbot er internationalt orienteret og består af 4 medarbejdere samt 2 CEOs. Sweetbot ønsker at implementere en dansk udgave af deres website. Websitet skal være optimeret til mobile enheder og Sweetbot ønsker desuden, at der skal indgå jQuery elementer i løsningen.
+<br>
+Udover den tekniske løsning, bliver I også bedt om at give et bud på visuelle elementer samt informationarkitektur til sitet. Sweetbot har en style guide som skal følges (se vedhæftede fil) samt et logo som skal implementeres (se vedhæftede .eps fil).
+<br>
+Sweetbot har netop udviklet deres egen e-commerce løsning under navnet HotBot, men mangler et logo samt ikoner til løsningen. Dette skal I også udvikle og demonstrere i den online website løsning. Logoet skal desuden tilføjes den aktuelle styleguide.
+<br>
+Sidst men ikke mindst skal I foretage en brugertest af sitet.
+<br>
+Flowet afsluttes med en fælles præsentationsdag, hvor vi vurderer og diskuterer jeres løsning i plenum.
+<br>
+Gruppestørrelsen skal være på 3-4 stud.
+	     <h3>Re-design</h3>
+	      Vores Sweetbot hjemmside som vi afleveret havde en masse små fejl som vi ikke nåede at rette eller kunne finde ud af at rette. Derfor valgte Patricia og jeg at sætte os ned og prøve at opdatere og forbedre Sweetbot hjemmeside. Første element vi skulle rette var vores responsive navbar. I den originale version var den lavet med hover funktion. Problemet med det var at den ikke fungeret optimalt på telefonen. <br> Derfor valgte vi at lave den om til en burger menu med dropdown funktion istedet for. <br> Næste opgave var at rette billederne i Hotbot gallerien. Når skærmen kom ned i mobil størrelse blev de helt skæve. Det blev løst ved at gør containerens display til block. <br> Sweetbot blev ikke den pæneste side, men med den design manual vi havde at arbejde med syntes jeg vi gjorde meget godt.  </p>
+		</div>
+		</div>
+	<div class="col-1-8">
+		<div class="svg-wrapper1">
+      <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+        <rect id="shape1" height="40" width="150" />
+        <div id="text1">
+          <a href="http://jlloydmedia.com/Sweetbott%20gruppe/sweetbot.html" target="_blank"><span class="spot1"></span>Original</a>
+        </div>
+      </svg>
+    </div>
+		<div class="svg-wrapper2">
+      <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+        <rect id="shape2" height="40" width="150" />
+        <div id="text2">
+          <a href="../files/MULB-Gruppe5-sweetbot.pdf" target="_blank"><span class="spot1"></span>Rapport</a>
+        </div>
+      </svg>
+		</div>
+		<div class="svg-wrapper3">
+      <svg height="40" width="200" xmlns="http://www.w3.org/2000/svg">
+        <rect id="shape3" height="40" width="150" />
+        <div id="text3">
+			<a href="http://jlloydmedia.com/Sweetbott/sweetbot.html" target="_blank"><span class="spot1"></span>Re-design</a>
+        </div>
+      </svg>
+    </div>
+	</div>
+	</div>
+			<div class="grid">
+				
+				<div class="col-1-1">
+		<button class="open-button" onclick="openForm()">Kontakt</button>
+
+<div class="form-popup" id="myForm">
+  <form action="mailto: email-.php" method="post" class="form-container">
+    <h1>Send mig en mail så vender jeg tilbage hurtigst muligt.</h1>
+
+    <label for="name"><b>Dit Navn</b></label>
+    <input type="text" placeholder="Skriv dit navn" name="navn" required>
+	  
+	  <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Indtast Email" name="email" required>
+	  <label for="number"><b>Mobilnummer</b></label>
+    <input type="text" placeholder="Indtast Mobilnummer" name="mobilnummer" required>
+	  <label for="emne"><b>Send mig en besked.</b></label>  
+<textarea type="text" placeholder="Skriv tekst her." name="besked" required></textarea>
+   
+	 
+    <button type="submit" class="btn">Kontakt</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Luk</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+	<div class="col-1-1">
+		<div class="footer">
+		<p>J.Lloyd media</p>
+		</div>
+					</div>
+			</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Flow 2: Byg din portfolio</title>
+<link href="../stylesheets/style-layout.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+		<script>
+	function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+	</script>
+	
+
+
+<!--Mobilenavbar-->
+	<div class="grid">
+	
+		<div class="topNav">
+			 <div class="mobile-col-9-12">
+  <div id="myLinks">
+  <li><a class="active" href="../index.html">Forside</a></li>
+  <li><a href="om mig.html">Om mig</a></li>
+  <li><a href="projekter.html">Projekter</a></li>
+  <li><a href="reflektion.html">Reflektioner</a></li>
+  <li><a href="kontakt.html">Kontakt</a></li>
+  </div>
+  <div class="burger">
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+				 </div>
+</div>
+		</div>
+		</div>
+		<div class="grid">
+	<div class="logo">
+	<div class="col-3-12"> 
+		<img src="../img/logo.png" alt="logo" class="logo">
+	</div>
+	</div>
+		<div class="col-9-12">
+			 <ul class="navDesk">
+  <li><a  href="../index.html">Forside</a></li>
+  <li><a href="om mig.html">Om Mig</a></li>
+  <li><a class="active" href="projekter.html">Projekter</a></li>
+  <li><a href="reflektion.html">Reflektion</a></li>
+	</ul>
+			 </div>
+	</div>
+				<div class="grid grid-pad">
+		<div class="col-1-1 push-1-12">
+		<h1>Flow 2 - Byg din portfolio</h1>
+		</div>
+	<div class="col-2-3">
+     <div class="flowSweet">
+		<h3>Opgavebeskrivelse</h3>
+		<p>Nu er det tid til at implementere en fungerende online version af din portfolio i form af et website, som du udvikler fra grunden ved hjælp af HTML 5 og CSS 3. Brug din prototype som oplæg – måske kommer du tæt på det første udkast, måske tager dit projekt en ny og uventet kreativ retning?
+
+Du skal producere en online version og dokumentere din kode og projektstruktur på GitHub. Vi forventer:
+
+<li>online version af din portfolio på dit Webhotel (ikke via GitHub pages blinker)</li>
+<li>en repository til dit portfolio projekt</li>
+<li>en passende projektstruktur (filnavne, mapper)</li>
+<li>fejlfri kode (valideret!)</li>
+		 <br>
+Udover den tekniske implementering, er det vigtigt, at du forholder dig til følgende, når du designer dit nye website:
+
+<li>Hvem skal se min portfolio – hvem henvender jeg mig til?</li>
+<li>Hvordan præsenterer jeg bedst mig selv?</li>
+<li>Hvordan formidler jeg, hvad jeg har lært indtil nu og hvad jeg håber at lære fremover?</li>
+<li>Hvilken visuel stil og stemning ønsker jeg på min portfolio?</li>
+<li>Hvordan kan jeg give min portfolio et personligt touch?</li>
+<br>
+Din portfolio vil følge dig gennem hele din studietid og er et vigtigt redskab til præsentation af dit arbejde og din læring, samt en platform, hvor underviserne løbende kan følge din faglige udvikling og studieaktivitet.
+<br>
+Flowet afsluttes med en fælles præsentationsdag, hvor vi vurderer og diskuterer jeres arbejde i plenum. Har du brug for yderligere feedback, kommentarer eller forslag til din portfolio, kan du kontakte underviserne efterfølgende. 
+<br>
+Du afleverer her i opgaven:
+<br>
+<li>Et link direkte til din online portfolio</li>
+<li>Et link til dit GitHub repository</li></p>
+	     <h3>Re-design</h3>
+	      <p></p>
+		</div>
+		</div>
+	<div class="col-1-8">
+		<div class="svg-wrapper1">
+      <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+        <rect id="shape1" height="40" width="150" />
+        <div id="text1">
+          <a href="http://jlloydmedia.com/portfolio_fe/index2.html" target="_blank"><span class="spot1"></span>Original</a>
+        </div>
+      </svg>
+    </div>
+		<div class="svg-wrapper2">
+      <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+        <rect id="shape2" height="40" width="150" />
+        <div id="text2">
+          <a href="http://jlloydmedia.com/index.html" target="_blank"><span class="spot1"></span>Re-design</a>
+        </div>
+      </svg>
+		</div>
+	</div>
+	</div>
+			<div class="grid">
+				
+				<div class="col-1-1">
+		<button class="open-button" onclick="openForm()">Kontakt</button>
+
+<div class="form-popup" id="myForm">
+  <form action="mailto: email-.php" method="post" class="form-container">
+    <h1>Send mig en mail så vender jeg tilbage hurtigst muligt.</h1>
+
+    <label for="name"><b>Dit Navn</b></label>
+    <input type="text" placeholder="Skriv dit navn" name="navn" required>
+	  
+	  <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Indtast Email" name="email" required>
+	  <label for="number"><b>Mobilnummer</b></label>
+    <input type="text" placeholder="Indtast Mobilnummer" name="mobilnummer" required>
+	  <label for="emne"><b>Send mig en besked.</b></label>  
+<textarea type="text" placeholder="Skriv tekst her." name="besked" required></textarea>
+   
+	 
+    <button type="submit" class="btn">Kontakt</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Luk</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+	<div class="col-1-1">
+		<div class="footer">
+		<p>J.Lloyd media</p>
+		</div>
+					</div>
+			</div>
+	</div>
+</body>
+</html>

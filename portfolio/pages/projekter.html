@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Projekter</title>
+<link href="../stylesheets/style-layout.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+		<script>
+	function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+	</script>
+	
+
+
+<!--Mobilenavbar-->
+	<div class="grid">
+	
+		<div class="topNav">
+			 <div class="mobile-col-9-12">
+  <div id="myLinks">
+  <li><a href="../index.html">Forside</a></li>
+  <li><a href="om mig.html">Om mig</a></li>
+  <li><a class="active" href="#">Projekter</a></li>
+  <li><a href="reflektion.html">Reflektioner</a></li>
+  </div>
+  <div class="burger">
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+				 </div>
+</div>
+		</div>
+		</div>
+		<div class="grid">
+	<div class="logo">
+	<div class="col-3-12"> 
+		<img src="../img/logo.png" alt="logo" class="logo">
+	</div>
+	</div>
+	<div class="col-9-12">
+			 <ul class="navDesk">
+  <li><a  href="../index.html">Forside</a></li>
+  <li><a href="om mig.html">Om Mig</a></li>
+  <li><a class="active" href="#">Projekter</a></li>
+  <li><a href="reflektion.html">Reflektion</a></li>
+	</ul>
+			 </div>
+	</div>
+			<div class="grid grid-pad">
+				<div class="col-6-12">
+				
+			<a href="flowintroBro.html">		
+			<div class="projContainer1">
+			
+  <div class="projInfoContainer">
+    <h2>Intro</h2>
+    <p class="projCat">Bro Projekt</p>
+  </div>
+  <img src="../img/hjerte_projekt.jpg" alt="Project image Heart"/>
+</div></a>
+				</div>
+				<div class="col-6-12">
+					<a href="flow1Drøm.html">
+<div class="projContainer2">
+  <div class="projInfoContainer">
+    <h2>Flow 1</h2>
+    <p class="projCat">Drøm din portfolio</p>
+  </div>
+  <img src="../img/drøm_portfirstv.png" alt="Project image portfolio" />
+						</div></a>
+				</div>
+						<div class="col-6-12">
+							<a href="flow2Byg.html">
+			<div class="projContainer1">
+  <div class="projInfoContainer">
+    <h2>Flow 2</h2>
+    <p class="projCat">Byg din Portfolio</p>
+				</div>
+  <img src="../img/drøm_port.PNG" alt="Project image Heart" />
+</div></a>
+				</div>
+				<div class="col-6-12">
+					<a href="flow3App.html">
+<div class="projContainer2">
+  <div class="projInfoContainer">
+    <h2>Flow 3</h2>
+    <p class="projCat">Byg en app</p>
+  
+  </div>
+  <img src="../img/bolig_app.jpg" alt="Project image Heart" />
+						</div></a>
+				</div>
+						<div class="col-6-12">
+							<a href="flow4Sweetbot.html">
+			<div class="projContainer1">
+  <div class="projInfoContainer">
+    <h2>Flow 4</h2>
+    <p class="projCat">Sweetbot</p>
+  </div>
+  <img src="../img/sweetbot_logo.jpg" alt="Project image Heart" />
+								</div></a>
+				</div>
+				<div class="col-6-12">
+					<a href="flow5Portfolio.html">
+<div class="projContainer2">
+  <div class="projInfoContainer">
+    <h2>Flow 5</h2>
+	  <p class="projCat">Portfolio</p>
+  </div>
+  <img src="../img/port_flow5.PNG" alt="Project image Heart" />
+						</div></a>
+				</div>
+				
+	</div>
+
+			<div class="grid">
+				
+				<div class="col-1-1">
+		<button class="open-button" onclick="openForm()">Kontakt</button>
+
+<div class="form-popup" id="myForm">
+  <form action="mailto: email-.php" method="post" class="form-container">
+    <h1>Send mig en mail så vender jeg tilbage hurtigst muligt.</h1>
+
+    <label for="name"><b>Dit Navn</b></label>
+    <input type="text" placeholder="Skriv dit navn" name="navn" required>
+	  
+	  <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Indtast Email" name="email" required>
+	  <label for="number"><b>Mobilnummer</b></label>
+    <input type="text" placeholder="Indtast Mobilnummer" name="mobilnummer" required>
+	  <label for="emne"><b>Send mig en besked.</b></label>  
+<textarea type="text" placeholder="Skriv tekst her." name="besked" required></textarea>
+   
+	 
+    <button type="submit" class="btn">Kontakt</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Luk</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+	<div class="col-1-1">
+		<div class="footer">
+		<p>J.Lloyd media</p>
+		</div>
+					</div>
+			</div>
+			
+</div><!--Grid grid-pad end div-->
+</body>
+</html>

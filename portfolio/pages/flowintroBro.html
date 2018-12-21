@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Intro: Bro</title>
+<link href="../stylesheets/style-layout.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+		<script>
+	function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+	</script>
+	
+
+
+<!--Mobilenavbar-->
+	<div class="grid">
+	
+		<div class="topNav">
+			 <div class="mobile-col-9-12">
+  <div id="myLinks">
+  <li><a class="active" href="../index.html">Forside</a></li>
+  <li><a href="#">Om mig</a></li>
+  <li><a href="projekter.html">Projekter</a></li>
+  <li><a href="reflektion.html">Reflektioner</a></li>
+  </div>
+  <div class="burger">
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+				 </div>
+</div>
+		</div>
+		</div>
+		<div class="grid">
+	<div class="logo">
+	<div class="col-3-12"> 
+		<img src="../img/logo.png" alt="logo" class="logo">
+	</div>
+	</div>
+		<div class="col-9-12">
+			 <ul class="navDesk">
+  <li><a  href="../index.html">Forside</a></li>
+  <li><a href="om mig.html">Om Mig</a></li>
+  <li><a class="active" href="projekter.html">Projekter</a></li>
+  <li><a href="reflektion.html">Reflektion</a></li>
+	</ul>
+			 </div>
+	</div>	
+	<div class="grid">
+	<div class="col-2-3 push-1-12">
+     <div class="flowSweet">
+		<h2>Bro projekt</h2>
+	  <p>I vores første projekt, fik jeg til opgave at tage billeder af diverse broer rundt omkring i københavn. Derefter skulle vi vælge et af vores billeder og redigere den. </p>
+	  <ul>
+	  <li>Fjern et element: Noget på billedet skal fjernes og baggrunden (hullet bagved) skal fyldes ud så det passer med billedet.</li>
+	  <li>Tilføj et element: Noget som ikke oprindeligt var i billedet, skal sættes ind, så det ser ud som om, det var der fra starten.</li>
+	  <li>Ret billedets lysforhold  eller tilfør billedet en stemning ved filter eller farvetoning</li>
+	  <li>Beskæring og evt opretning (lodret/vandret) af billede.</li>
+	  <li>Format og størrelsen: billedet skal være i format 4:3 og gemmes så størrelsen er ≦ 1 M pixel</li>
+	  </ul>
+		
+	     <h3>Proces</h3>
+	      <p>Billedet til højre er den færdig redigeret billede fra bro proektet. I den har jeg redigeret billedet lys, farve, vibrance, contrast og saturation. Samt har jeg fjernet mange af de elemneter som fjernet fokus fra billedets centrum. Jeg har også tilføjet en lille mand der sidder på hjertet. </p>
+		</div>
+		</div>
+	<div class="col-1-1 push-1-5">
+	  <div class="clearfix">
+     <div class="bro-billede"><img src="../img/hjerte-ured.jpg" alt="Hjerte lås på bro" style=" width: 100%; height: 400px">
+       <p>Før redigering..</p></div>
+	   <div class="bro-billede" ><img src="../img/hjerte_projekt.jpg" alt="Hjerte lås på bro" style="width: 100%; height: 400px">
+      <p>Efter redigering..</p></div>
+     </div>
+		</div>
+	</div>
+				<div class="grid">
+				
+				<div class="col-1-1">
+		<button class="open-button" onclick="openForm()">Kontakt</button>
+
+<div class="form-popup" id="myForm">
+  <form action="mailto: email-.php" method="post" class="form-container">
+    <h1>Send mig en mail så vender jeg tilbage hurtigst muligt.</h1>
+
+    <label for="name"><b>Dit Navn</b></label>
+    <input type="text" placeholder="Skriv dit navn" name="navn" required>
+	  
+	  <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Indtast Email" name="email" required>
+	  <label for="number"><b>Mobilnummer</b></label>
+    <input type="text" placeholder="Indtast Mobilnummer" name="mobilnummer" required>
+	  <label for="emne"><b>Send mig en besked.</b></label>  
+<textarea type="text" placeholder="Skriv tekst her." name="besked" required></textarea>
+   
+	 
+    <button type="submit" class="btn">Kontakt</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Luk</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+	<div class="col-1-1">
+		<div class="footer">
+		<p>J.Lloyd media</p>
+		</div>
+					</div>
+			</div>
+	</div>
+</body>
+</html>
